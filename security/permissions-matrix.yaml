@@ -1,0 +1,11 @@
+# security/permissions-matrix.yaml
+roles:
+  admin:
+    - overall/administer
+  developer:
+    - job/build
+    - job/cancel
+    - job/configure
+    - job/read
+  viewer:
+    - job/read
