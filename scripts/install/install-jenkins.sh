@@ -12,7 +12,7 @@ docker volume create jenkins_home
 # Lancement de Jenkins avec des ports différents (8081 au lieu de 8080)
 docker run -d \
   --name jenkins \
-  -p 8081:8080 \
+  -p 9091:8080 \
   -p 50001:50000 \
   -v jenkins_home:/var/jenkins_home \
   jenkins/jenkins:lts
@@ -36,4 +36,4 @@ else
     docker logs jenkins
 fi
 
-echo "Jenkins sera accessible sur : http://localhost:8081"
+echo "Jenkins sera accessible sur : http://localhost:9091"

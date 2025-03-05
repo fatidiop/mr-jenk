@@ -1,0 +1,7 @@
+[INFO] Building project...
+[INFO] Compilation completed successfully.
+[INFO] BUILD SUCCESS
+if grep -q "DEPLOYMENT SUCCESS" "$LOGFILE"; then
+    STATUS="DEPLOYED"
+    MESSAGE=":rocket: Le déploiement a réussi !"
+fi
